@@ -79,3 +79,4 @@ pagination.create = function (currentPage, pageCount, queryObj) {
     }
     return data;
 };
+
