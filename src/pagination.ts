@@ -40,7 +40,7 @@ const pagination: {
         }
 
         pageCount = parseInt(String(pageCount), 10);
-        let pagesToShow = [1, 2, pageCount - 1, pageCount];
+        let pagesToShow: number[] = [1, 2, pageCount - 1, pageCount];
 
         currentPage = parseInt(String(currentPage), 10) || 1;
         const previous = Math.max(1, currentPage - 1);
