@@ -32,10 +32,10 @@ const pagination = exports;
 pagination.create = function (currentPage, pageCount, queryObj) {
     if (pageCount <= 1) {
         return {
-            prev: { page: 1, active: currentPage > 1, qs: '' },
-            next: { page: 1, active: currentPage < pageCount, qs: '' },
-            first: { page: 1, active: currentPage === 1, qs: '' },
-            last: { page: 1, active: currentPage === pageCount, qs: '' },
+            prev: { page: 1, active: currentPage > 1 },
+            next: { page: 1, active: currentPage < pageCount },
+            first: { page: 1, active: currentPage === 1 },
+            last: { page: 1, active: currentPage === pageCount },
             rel: [],
             pages: [],
             currentPage: 1,
