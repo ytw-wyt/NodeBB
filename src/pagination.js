@@ -25,7 +25,10 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const qs = __importStar(require("querystring"));
 const _ = __importStar(require("lodash"));
-const pagination = module.exports;
+const pagination = exports;
+// const pagination: {
+//     create: (currentPage: number, pageCount: number, queryObj: Record<string, string | number>) => PaginationData;
+// } = exports;
 pagination.create = function (currentPage, pageCount, queryObj) {
     if (pageCount <= 1) {
         return {
